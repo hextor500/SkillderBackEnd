@@ -1,0 +1,22 @@
+{
+  "name": "backend-skillder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "knex": "knex init",
+    "knexMigrations": "knex migrate:make Skills && knex migrate:make User && knex migrate:make Company && knex migrate:make UserSkills && knex migrate:make Requests",
+    "knexLatest": "knex migrate:latest",
+    "knexRollback": "knex migrate:rollback"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.0.1",
+    "pg": "^8.11.3"
+  }
+}
